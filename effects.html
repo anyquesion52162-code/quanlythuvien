@@ -1,0 +1,58 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<style>
+
+button{
+padding:12px 20px;
+font-size:16px;
+border:none;
+background:#00b894;
+color:white;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+background:#00cec9;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2 class="animate__animated animate__fadeIn">
+Hiệu ứng âm thanh
+</h2>
+
+<button onclick="playSound()">Test âm thanh</button>
+
+<audio id="clickSound">
+<source src="click.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function playSound(){
+document.getElementById("clickSound").play();
+}
+</script>
+
+<iframe width="0" height="0"
+src="https://www.youtube.com/embed/5qap5aO4i9A?autoplay=1&loop=1&playlist=5qap5aO4i9A"
+frameborder="0"
+allow="autoplay">
+</iframe>
+
+</body>
+</html>
+```
